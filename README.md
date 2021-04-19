@@ -12,6 +12,9 @@ using [Harbor](https://goharbor.io/) and [Let Encrypt](https://letsencrypt.org/)
     - [Install Harbor](#install-harbor)
     - [Setup LDAP authentication](#setup-ldap-authentication)
     - [Manage repositories](#manage-repositories)
+  - [Notes](#notes)
+    - [Manage repositories](#add-replication-to-github)
+      
  ## Usage 
 
 ### Push
