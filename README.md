@@ -1,6 +1,6 @@
 # Private Docker Registry
 This is the documentation of the private docker registry at dockister[.di.unipi.it](dockister.di.unipi.it) 
-using [Harbor]](https://goharbor.io/) and [Let Encrypt](https://letsencrypt.org/).
+using [Harbor](https://goharbor.io/) and [Let Encrypt](https://letsencrypt.org/).
 
 - [Private Docker Registry](#private-docker-registry)
   - [Usage](#usage)
