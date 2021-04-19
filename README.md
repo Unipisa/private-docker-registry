@@ -90,4 +90,4 @@ By web gui go to setting, configuration
 By web gui
 
 
-![manage repositories](img/,anage.jpg)
+![manage repositories](img/manage.jpg)
