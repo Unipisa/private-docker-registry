@@ -2,6 +2,8 @@
 This is the documentation of the private docker registry at [dockister.di.unipi.it](dockister.di.unipi.it) 
 using [Harbor](https://goharbor.io/) and [Let Encrypt](https://letsencrypt.org/).
 
+[Harbor](https://goharbor.io/) is an [open source](https://github.com/goharbor/harbor) private registry o container images and Helm charts, devloped by [VMWare](https://docs.pivotal.io/vmware-harbor/index.html). It offers a registry, a web interface, LDAP integration, API management, two-way replication to many cloud registry (as [GitHub registry](https://github.com/features/packages) - ghcr.io) and [much more](https://github.com/goharbor/harbor#features). 
+
 - [Private Docker Registry](#private-docker-registry)
   - [Usage](#usage)
     - [Push](#push)
