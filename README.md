@@ -106,3 +106,14 @@ docker exec -u 0 -it 17d3498715b0 bash
 $ echo "140.82.121.34 ghcr.io" >> /etc/hosts
 ```
 where `17d3498715b0` is for `goharbor/harbor-core`
+
+or
+
+```
+    networks:
+      - harbor
+    extra_hosts:
+      - "ghcr.io:140.82.121.34"
+```
+
+in `docker-compose.yml`.
