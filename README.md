@@ -1,6 +1,8 @@
 # Private Docker Registry
-This is the documentation of the private docker registry at dockister[.di.unipi.it](dockister.di.unipi.it) 
+This is the documentation of the private docker registry at [dockister.di.unipi.it](dockister.di.unipi.it) 
 using [Harbor](https://goharbor.io/) and [Let Encrypt](https://letsencrypt.org/).
+
+[Harbor](https://goharbor.io/) is an [open source](https://github.com/goharbor/harbor) private registry o container images and Helm charts, devloped by [VMWare](https://docs.pivotal.io/vmware-harbor/index.html). It offers a registry, a web interface, LDAP integration, API management, two-way replication to many cloud registry (as [GitHub registry](https://github.com/features/packages) - ghcr.io) and [much more](https://github.com/goharbor/harbor#features). 
 
 - [Private Docker Registry](#private-docker-registry)
   - [Usage](#usage)
@@ -12,6 +14,9 @@ using [Harbor](https://goharbor.io/) and [Let Encrypt](https://letsencrypt.org/)
     - [Install Harbor](#install-harbor)
     - [Setup LDAP authentication](#setup-ldap-authentication)
     - [Manage repositories](#manage-repositories)
+    - [Notes](#notes)
+      - [Add replication to GitHub](#add-replication-to-github)
+      
  ## Usage 
 
 ### Push
@@ -95,3 +100,23 @@ By web gui
 By API
 
 ![manage repositories](img/api.jpg)
+### Notes
+
+#### Add replication to GitHub
+
+```
+docker exec -u 0 -it 17d3498715b0 bash
+$ echo "140.82.121.34 ghcr.io" >> /etc/hosts
+```
+where `17d3498715b0` is for `goharbor/harbor-core`
+
+or
+
+```
+    networks:
+      - harbor
+    extra_hosts:
+      - "ghcr.io:140.82.121.34"
+```
+
+in `docker-compose.yml`.
