@@ -91,3 +91,7 @@ By web gui
 
 
 ![manage repositories](img/manage.jpg)
+
+By API
+
+![manage repositories](img/api.jpg)
